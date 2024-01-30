@@ -10,6 +10,7 @@ import (
 	"github.com/guigoliver/imersao-full-cycle/internal/database"
 	"github.com/guigoliver/imersao-full-cycle/internal/service"
 	"github.com/guigoliver/imersao-full-cycle/internal/webserver"
+	_"github.com/go-sql-driver/mysql"
 )
 
 func main() {

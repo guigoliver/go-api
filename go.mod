@@ -1,4 +1,4 @@
-module gitub.com/guigoliver/imersao-full-cycle
+module github.com/guigoliver/imersao-full-cycle
 
 go 1.21.6
 

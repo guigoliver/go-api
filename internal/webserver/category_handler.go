@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/guigoliver/imersao-full-cycle/internal/entity"
-	"github.com/guigoliver/imersao-full-cycle/internal/service"
+	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/entity"
+	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/service"
 )
 
 type WebCategoryHandler struct {

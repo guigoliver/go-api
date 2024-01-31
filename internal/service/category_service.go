@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/guigoliver/imersao-full-cycle/internal/database"
-	"github.com/guigoliver/imersao-full-cycle/internal/entity"
+	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/database"
+	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/entity"
 )
 
 type CategoryService struct {

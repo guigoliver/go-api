@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 
-	"github.com/guigoliver/imersao-full-cycle/internal/entity"
+	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/entity"
 )
 
 type CategoryDB struct {

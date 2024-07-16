@@ -9,14 +9,17 @@ import (
 	"github.com/devfullcycle/imersao-full-cycle/goapi/internal/service"
 )
 
+// Handler for HTTP requests related to products.
 type WebProductHandler struct {
 	ProductService *service.ProductService
 }
 
+// Creates a new instance of WebProductHandler.
 func NewWebProductHandler(productService *service.ProductService) *WebProductHandler {
 	return &WebProductHandler{ProductService: productService}
 }
 
+// Handles the HTTP GET request to retrieve all products.
 func (wph *WebProductHandler) GetProducts(w http.ResponseWriter, r *http.Request) {
 	products, err := wph.ProductService.GetProducts()
 	if err != nil {
@@ -26,6 +29,7 @@ func (wph *WebProductHandler) GetProducts(w http.ResponseWriter, r *http.Request
 	json.NewEncoder(w).Encode(products)
 }
 
+// Handles the HTTP GET request to retrieve a product by its ID.
 func (wph *WebProductHandler) GetProduct(w http.ResponseWriter, r *http.Request) {
 	id := chi.URLParam(r, "id")
 	if id == "" {
@@ -40,6 +44,7 @@ func (wph *WebProductHandler) GetProduct(w http.ResponseWriter, r *http.Request)
 	json.NewEncoder(w).Encode(product)
 }
 
+// Handles the HTTP GET request to retrieve all products by category ID.
 func (wph *WebProductHandler) GetProductByCategoryID(w http.ResponseWriter, r *http.Request) {
 	categoryID := chi.URLParam(r, "categoryID")
 	if categoryID == "" {
@@ -54,7 +59,7 @@ func (wph *WebProductHandler) GetProductByCategoryID(w http.ResponseWriter, r *h
 	json.NewEncoder(w).Encode(products)
 }
 
-
+// Handles the HTTP POST request to create a new product.
 func (wph *WebProductHandler) CreateProduct(w http.ResponseWriter, r *http.Request) {
 	var product entity.Product
 	err := json.NewDecoder(r.Body).Decode(&product)
@@ -69,3 +74,4 @@ func (wph *WebProductHandler) CreateProduct(w http.ResponseWriter, r *http.Reque
 	}
 	json.NewEncoder(w).Encode(result)
 }
+

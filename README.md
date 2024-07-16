@@ -53,6 +53,7 @@ The functionalities provided by this API are minimal. Here are some known areas 
 
 ## Contributing
 
+This project is intended for educational purposes, showcasing a simple yet functional API service.
 Although this is a study case, we welcome contributions! If you would like to lend a hand on the aforementioned points of improvement, please follow these steps:
 
 1. Fork the repository.

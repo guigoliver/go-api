@@ -3,7 +3,14 @@ This page lists the available endpoints in this API with all the information rel
 
 ## Table of Contents
 - [Category Endpoints](#category-endpoints)
+  - [List Categories](#list-categories)
+  - [Show Category](#show-category)
+  - [Create Category](#create-category)
 - [Product Endpoints](#product-endpoints)
+  - [List Products](#list-products)
+  - [Show Product](#show-product)
+  - [Show Products by Category](#show-products-by-category)
+  - [Create Product](#create-product)
 
 ## Category Endpoints
 
@@ -155,7 +162,7 @@ Creates a new category.
 
 ## Product Endpoints
 
-### List All Products
+### List Products
 
 Retrieves data related to all products.
 
@@ -218,7 +225,7 @@ fetch(`http://localhost:8080/products`, {
 
 Retrieves data related to a specific product.
 
-### URL
+#### URL
 
 `GET /products/:id`
 

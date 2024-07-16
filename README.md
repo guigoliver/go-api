@@ -1,14 +1,14 @@
 # GO E-COMMERCE API
 
 ## Overview
-This repository contains a microservice which manages products and categories for a ficticious application called Full Cycle Ecommerce. This service is an API written in Golang responsible for creating and fetching products and categories for the Ecommerce platform.
+This repository contains a microservice which manages products and categories for a fictitious application called Full Cycle E-commerce. This service is an API written in Golang responsible for creating and fetching products and categories for the E-commerce platform.
 
 ## Table of Contents
 - [GO E-COMMERCE API](#go-e-commerce-api)
   - [Overview](#overview)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
+    - [Technologies](#technologies)
     - [Setup Instructions](#setup-instructions)
   - [API Documentation](#api-documentation)
   - [Future improvements](#future-improvements)
@@ -16,7 +16,7 @@ This repository contains a microservice which manages products and categories fo
 
 ## Getting Started
 
-### Prerequisites
+### Technologies
 - Docker
 - Golang
 - MySQL
